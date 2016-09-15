@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"soft\system_stm32l1xx.o"
+"soft\stm32l1xx_hal_gpio.o"
+"soft\stm32l1xx_hal_rcc_ex.o"
+"soft\stm32l1xx_hal_dma.o"
+"soft\stm32l1xx_hal_pwr.o"
+"soft\stm32l1xx_hal_cortex.o"
+"soft\stm32l1xx_hal_flash_ex.o"
+"soft\stm32l1xx_hal.o"
+"soft\stm32l1xx_hal_rcc.o"
+"soft\stm32l1xx_hal_pwr_ex.o"
+"soft\stm32l1xx_hal_flash_ramfunc.o"
+"soft\stm32l1xx_hal_tim.o"
+"soft\stm32l1xx_hal_tim_ex.o"
+"soft\stm32l1xx_hal_uart.o"
+"soft\stm32l1xx_hal_flash.o"
+"soft\stm32l1xx_it.o"
+"soft\main.o"
+"soft\stm32l1xx_hal_msp.o"
+"soft\pmtk_driver.o"
+"soft\pmtk_hw_config.o"
+"soft\misc.o"
+"soft\startup_stm32l152xe.o"
+--library_type=microlib --strict --scatter "Soft\Soft.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Soft.map" -o Soft\Soft.axf
